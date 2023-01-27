@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LJ Tour</title>
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/f2552ea92d.js" crossorigin="anonymous"></script>
+        <style>
+            body {
+                height : 100vh; 
+                margin: 0;
+            }
+            .topnav{
+                background-color: rgba(255,255,255,0);
+                font-family: Arial, Helvetica, sans-serif;
+                overflow: hidden;
+                position: fixed;
+                margin:0;
+                top:30px;
+                right:30px;
+                z-index: 99;
+            }
+            .topnav0{
+                font-size: 20px;
+                position: fixed;
+                left: 60px;
+                color: rgb(0, 0, 0);
+            }
+        
+            .topnav1 a{
+                color:  #000000;
+                text-align: center;
+                text-decoration: none;
+                font-size: 17px;
+                padding: 14px 16px;
+            }
+            .topnav1 a:hover{
+                background-color:  #ddd;
+                color: black;
+            }
+            .logo { 
+                position:absolute;
+                float : left;
+                width: 50px;
+                height: 80px;
+            }
+            a {
+                font-weight: 600;
+                font-size: 30px;
+                color: #000000;
+                font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+                text-decoration-line: none;
+            }
+            .main-Sh {
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 10px rgba(0, 0, 0, 0.226);
+            }
+            .main {
+                display:inline-block; 
+                width: 1000px;
+                height: 100px;
+                background: rgba(0, 255, 98, 0.219);
+                border-radius: 2em;
+                text-align: left;
+                margin-left:550px;
+                margin-top:100px;
+            }
+            .main2 {
+                display:inline-block; 
+                width: 1000px;
+                height: 100px;
+                margin-left:550px;
+                margin-top:30px;
+            }
+            .main3 {
+                position:absolute; 
+                width: 300px;
+                height: 1200px;
+                background: rgba(0, 225, 255, 0.171);
+                border-radius: 2em;
+                text-align: left;
+                margin-left:130px;
+                margin-top:450px;
+            }
+            .main4 {
+                display:inline-block; 
+                width: 1000px;
+                height: 100px;
+                margin-left:550px;
+                margin-top:140px;
+            }
+            .main5 {
+                display:inline-block; 
+                width: 1000px;
+                height: 100px;
+                margin-left:5px;
+                margin-top:470px;
+            }
+            h1 {
+                text-align: center;
+                margin-top: 28px;
+                margin-left: 20px;
+                color: hsla(0, 0%, 0%, 0.699);
+                font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            }
+            h2 {
+                text-align: left;
+                color: hsla(0, 0%, 0%, 0.699);
+                font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            }
+            h3 {
+                font-size: 20px;
+                font-weight: 600;
+                color: hsl(0, 0%, 0%);
+                font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+                margin-top: 5px;
+                text-align: center;
+            }
+            h4 {
+                font-size: 20px;
+                font-weight: 600;
+                color: hsl(0, 0%, 0%);
+                font-family: 'Gothic', Tahoma, Verdana, sans-serif;
+                margin-top: 5px;
+                text-align: center;
+            }
+            h5 {
+                font-size: 15px;
+                font-weight: 600;
+                color: hsla(0, 0%, 0%, 0.726);
+                font-family: 'Gothic', Tahoma, Verdana, sans-serif;
+                text-align: center;
+            }
+            h6 {
+                margin-top: 42px;
+                margin-left: 55px;
+            }
+            .at_image{
+                position: absolute;
+                margin-top: 15px;
+                margin-left:28px;
+            }
+            .ptc {
+                display:inline-block; 
+                width: 300px;
+                height: 400px;
+                background: #ffff;
+                border: 1px solid #999;
+                border-radius: 10px; 
+                margin: 10px; 
+            }
+            .ptc_s {
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 2px 5px rgba(0, 0, 0, 0.24);
+            }
+            .act_s {
+                width:280px;
+                height: 200px;
+                margin-top:10px;
+                margin-left:10px;
+            }
+            .button{ 
+                position: absolute;
+                font-size: 35px;
+                font-weight: bold;
+                color : rgb(255, 255, 255);
+                text-align: center; 
+                margin-left: 150px;
+                margin-top: -40px;
+                background-color:rgba(255, 0, 0, 0.63);
+                border-radius: 0.5em;
+                padding:10px;
+            }
+            .button:hover { 
+                background-color: rgba(255, 0, 0, 0.5);
+                position: absolute;
+                color : rgb(255, 255, 255);
+            }
+    </style>
+    </head>
+        <body>
+            <ul class="topnav">
+                <a href="travel.php">
+                    <div class="topnav0">
+                        <i class="fas fa-plane-departure">&nbsp;&nbsp;&nbsp;LJ Tour</i>
+                    </div>
+                </a>
+                
+                <div class="topnav1">
+                    <a href="travel.php">홈</a>
+                    <a href="login.html">로그인</a>
+                    <a href="signup.html">회원가입</a>
+                </div>
+            </ul>
+
+        <div class="main3 main-Sh">
+            <div class="at_image">
+                <h3>액티비티를 즐기세요!</h3>
+                <img src="pic/Act1.jpg" alt="activity" width="250" height="180"><br><br><br>
+                <img src="pic/Act2.jpg" alt="activity" width="250" height="180"><br><br><br>
+                <img src="pic/Grban5.jpg" alt="activity" width="250" height="180"><br><br><br>
+                <img src="pic/Act3.jpg" alt="activity" width="250" height="180"><br><br><br>
+                <img src="pic/Act4.jpg" alt="activity" width="250" height="180"><br><br><br>    
+            </div>
+        </div>
+
+        <div class="main main-Sh">
+            <h1>액티비티와 함께라면 더욱 즐겁습니다!</h1>
+        </div><br><br>
+
+        <div class="main2">
+        <div style="width:1000px; height:70px; padding:10px; border-left: 21px solid rgba(0, 26, 255, 0.767); border-right: 0px solid rgba(255, 0, 0, 0.397); background-color: rgba(0, 195, 255, 0.164); ">
+            <h2>아시아의 액티비티</h2><br>
+
+        <div class="ptc ptc_s">
+            <img src="pic/Avy1.jpg" class="act_s">
+            <h4>[ 우메다 공중정원 입장권 ]</h4>
+            <h5>가격 30000원 (인당)</h5>
+            <input type="int" name="ea" placeholder="갯수 입력" style="width:60px;height:15px; margin-left:70px; margin-top:5px;">
+            </h6><div class="button">담기</div>
+        </div>
+
+        <div class="ptc ptc_s">
+            <img src="pic/Avy2.jpg" class="act_s">
+            <h4>[ 남산타워 입장권 ]</h4>
+            <h5>가격 28000원 (인당)</h5>
+            <input type="int" name="ea" placeholder="갯수 입력" style="width:60px;height:15px; margin-left:70px; margin-top:5px;">
+            </h6><div class="button">담기</div>
+        </div>
+        
+        <div class="ptc ptc_s">
+            <img src="pic/Avy3.jpg" class="act_s">
+            <h4>[ 상하이 디즈니랜드 입장권 ]</h4>
+            <h5>가격 54000원 (인당)</h5>
+            <input type="int" name="ea" placeholder="갯수 입력" style="width:60px;height:15px; margin-left:70px; margin-top:5px;">
+            </h6><div class="button">담기</div>
+        </div>
+
+        </div>
+    </div>
+
+        <div class="main4">
+            <div style="width:1000px; height:70px; padding:10px; border-left: 21px solid rgba(0, 0, 0, 0.767); border-right: 0px solid rgba(255, 0, 0, 0.397); background-color: rgba(0, 195, 255, 0.164); ">
+                <h2>유럽의 액티비티</h2><br>
+                <div class="ptc ptc_s">
+                    <img src="pic/Avy4.jpg" class="act_s">
+                    <h4>[ 해리포터 스튜디오 관람권 ]</h4>
+                    <h5>가격 13000원 (인당)</h5>
+                    <input type="int" name="ea" placeholder="갯수 입력" style="width:60px;height:15px; margin-left:70px; margin-top:5px;">
+                    </h6><div class="button">담기</div>
+                </div>
+
+                <div class="ptc ptc_s">
+                    <img src="pic/Avy5.jpg" class="act_s">
+                    <h4>[ 루브르 박물관 관람권 ]</h4>
+                    <h5>가격 32000원 (인당)</h5>
+                    <input type="int" name="ea" placeholder="갯수 입력" style="width:60px;height:15px; margin-left:70px; margin-top:5px;">
+                    </h6><div class="button">담기</div>
+                </div>
+
+                <div class="ptc ptc_s">
+                    <img src="pic/Avy6.jpg" class="act_s">
+                    <h4>[ 맥주공장 견학권 ]</h4>
+                    <h5>가격 8000원 (인당)</h5>
+                    <input type="int" name="ea" placeholder="갯수 입력" style="width:60px;height:15px; margin-left:70px; margin-top:5px;">
+                    </h6><div class="button">담기</div>
+                </div>
+        </div>
+
+        <div class="main5">
+            <div style="width:1000px; height:70px; padding:10px; border-left: 21px solid rgba(0, 248, 41, 0.767); border-right: 0px solid rgba(255, 0, 0, 0.397); background-color: rgba(0, 195, 255, 0.164); ">
+                <h2>오세아니아의 액티비티</h2><br>
+                <div class="ptc ptc_s">
+                    <img src="pic/Avy7.jpg" class="act_s">
+                    <h4>[ 오페라 하우스 뮤지컬 티켓 ]</h4>
+                    <h5>가격 120000원 (인당)</h5>
+                    <input type="int" name="ea" placeholder="갯수 입력" style="width:60px;height:15px; margin-left:70px; margin-top:5px;">
+                    </h6><div class="button">담기</div>
+                </div>
+
+                <div class="ptc ptc_s">
+                    <img src="pic/Avy8.jpg" class="act_s">
+                    <h4>[ 카카두 국립공원 가이드 ]</h4>
+                    <h5>가격 8000원 (인당)</h5>
+                    <input type="int" name="ea" placeholder="갯수 입력" style="width:60px;height:15px; margin-left:70px; margin-top:5px;">
+                    </h6><div class="button">담기</div>
+                </div>
+
+                <div class="ptc ptc_s">
+                    <img src="pic/Avy9.jpg" class="act_s">
+                    <h4>[ 로토루아 케이블카 이용권 ]</h4>
+                    <h5>가격 9000원 (인당)</h5>
+                    <input type="int" name="ea" placeholder="갯수 입력" style="width:60px;height:15px; margin-left:70px; margin-top:5px;">
+                    </h6><div class="button">담기</div>
+                </div><br><br><br><br>
+        </div>
+    </body>
+</html>
